@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Registro De Residuos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Tipo</th>
+      <th>Contenedor</th>
+      <th>Telefono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registro_de_residuos.each do |registro_de_residuo| %>
+      <tr>
+        <td><%= registro_de_residuo.fecha %></td>
+        <td><%= registro_de_residuo.tipo %></td>
+        <td><%= registro_de_residuo.contenedor %></td>
+        <td><%= registro_de_residuo.telefono %></td>
+        <td><%= link_to 'Show', registro_de_residuo %></td>
+        <td><%= link_to 'Edit', edit_registro_de_residuo_path(registro_de_residuo) %></td>
+        <td><%= link_to 'Destroy', registro_de_residuo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registro De Residuo', new_registro_de_residuo_path %>

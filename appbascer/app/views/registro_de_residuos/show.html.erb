@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @registro_de_residuo.fecha %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @registro_de_residuo.tipo %>
+</p>
+
+<p>
+  <strong>Contenedor:</strong>
+  <%= @registro_de_residuo.contenedor %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @registro_de_residuo.telefono %>
+</p>
+
+<%= link_to 'Edit', edit_registro_de_residuo_path(@registro_de_residuo) %> |
+<%= link_to 'Back', registro_de_residuos_path %>

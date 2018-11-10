@@ -1,0 +1,2 @@
+class RegistroDeResiduo < ApplicationRecord
+end
